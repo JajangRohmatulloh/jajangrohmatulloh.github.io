@@ -27,6 +27,7 @@ $blue: #62D9FB;
 * {
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
     &::selection {
         background-color: $blue;
     }

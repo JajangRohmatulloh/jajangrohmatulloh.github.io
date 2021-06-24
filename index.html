@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My name is jajang Rohmatulloh I am is Web Developer and Web Designer">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <link rel="stylesheet" href="css/style.css">
     <title>Jajang Rohmatulloh's Profile</title>
 </head>
@@ -214,19 +217,31 @@
             </div>
         </div>
         <div id="contact">
-            <div class="block-form">
-                <div class="line"></div>
-                <h2>Send a Message</h2>
-                <form action="mailto:jajang.rohmatulloh02@gmail.com" method="post" enctype="text/plain">
-                    <input type="text" placeholder="Name" name="name" id="name" required>
-                    <input type="text" placeholder="Email" name="email" id="email" required>
-                    <input type="text" placeholder="Subject" name="subject" id="subject">
-                    <textarea name="message" id="message" cols="45" rows="10" placeholder="Message" required></textarea>
-                    <input type="submit" value="Send Message">
-                </form>
+            <div class="form-container">
+                <div class="block-form">
+                    <div class="line"></div>
+                    <h2>Send a Message</h2>
+                    <form action="mailto:jajang.rohmatulloh02@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" placeholder="Name" name="name" id="name" required>
+                        <input type="text" placeholder="Email" name="email" id="email" required>
+                        <input type="text" placeholder="Subject" name="subject" id="subject">
+                        <textarea name="message" id="message" cols="45" rows="10" placeholder="Message"
+                            required></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <div id="mapid"></div>
             </div>
         </div>
-        <script src="js/script.js"></script>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+        </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

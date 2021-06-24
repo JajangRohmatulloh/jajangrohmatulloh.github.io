@@ -435,23 +435,28 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 15px;
   }
 
-  .block-form {
+  #contact {
+    background-color: #F7F7F7;
+    width: 100%;
+    display: flex;
+  }
+  #contact .form-container .block-form {
     padding: 100px 50px 80px;
     background-color: #333333;
-    width: 33%;
+    max-width: 402px;
   }
-  .block-form h2 {
+  #contact .form-container .block-form h2 {
     margin-top: 0px;
     color: #ffffff;
     font-weight: normal;
   }
-  .block-form form {
-    position: relative;
-  }
-  .block-form form input[name=subject] {
+  #contact .form-container .block-form form input[name=subject] {
     border: none;
   }
-  .block-form form input[type=submit] {
+  #contact .form-container .block-form form input[name=subject]:focus-within {
+    border: none;
+  }
+  #contact .form-container .block-form form input[type=submit] {
     float: right;
     width: auto;
     padding: 7px 40px;
@@ -461,18 +466,30 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     transition: all 0.3s linear;
   }
-  .block-form form input[type=submit]:hover {
+  #contact .form-container .block-form form input[type=submit]:hover {
     color: #199CDB;
     background-color: #ffffff;
   }
-  .block-form form input,
-.block-form form textarea {
+  #contact .form-container .block-form form input,
+#contact .form-container .block-form form textarea {
     border: 1px solid #199CDB;
     background-color: #484848;
     width: 100%;
     padding: 9px 15px;
     margin-bottom: 14px;
     color: #ffffff;
+  }
+  #contact .form-container .block-form form input:focus-within,
+#contact .form-container .block-form form textarea:focus-within {
+    border: 1px solid #199CDB;
+    outline: none;
+  }
+  #contact .map-container {
+    width: auto;
+  }
+  #contact .map-container #mapid {
+    height: 578px;
+    width: 1116px;
   }
 
   #loading {

@@ -438,12 +438,14 @@ body::-webkit-scrollbar-thumb {
   #contact {
     background-color: #F7F7F7;
     width: 100%;
-    display: flex;
+  }
+  #contact .form-container {
+    max-width: 402px;
+    float: left;
   }
   #contact .form-container .block-form {
     padding: 100px 50px 80px;
     background-color: #333333;
-    max-width: 402px;
   }
   #contact .form-container .block-form h2 {
     margin-top: 0px;
@@ -456,9 +458,9 @@ body::-webkit-scrollbar-thumb {
   #contact .form-container .block-form form input[name=subject]:focus-within {
     border: none;
   }
-  #contact .form-container .block-form form input[type=submit] {
+  #contact .form-container .block-form form button {
     float: right;
-    width: auto;
+    border: none;
     padding: 7px 40px;
     border-radius: 20px;
     background-color: #199CDB;
@@ -466,7 +468,7 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     transition: all 0.3s linear;
   }
-  #contact .form-container .block-form form input[type=submit]:hover {
+  #contact .form-container .block-form form button:hover {
     color: #199CDB;
     background-color: #ffffff;
   }
@@ -484,12 +486,42 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #199CDB;
     outline: none;
   }
-  #contact .map-container {
-    width: auto;
-  }
   #contact .map-container #mapid {
     height: 578px;
     width: 1116px;
+  }
+  #contact .call-container {
+    width: 30%;
+    display: inline-block;
+    margin-top: 80px;
+  }
+  #contact .call-container img {
+    float: left;
+    margin-right: 45px;
+  }
+  #contact .address-container {
+    width: 30%;
+    display: inline-block;
+    margin-top: 80px;
+  }
+  #contact .address-container img {
+    float: left;
+    margin-right: 45px;
+  }
+
+  footer {
+    width: max-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer a img {
+    margin-left: 10px;
+  }
+  footer a span {
+    display: inline-block;
+    transform: translateY(-10px);
+    margin-left: 5px;
   }
 
   #loading {

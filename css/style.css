@@ -26,6 +26,13 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 -100vh 0 100vh #20232A;
 }
 
+a {
+  color: #000000;
+}
+a:hover {
+  color: #199CDB;
+}
+
 @keyframes zoom-out {
   from {
     transform: translateX(-1532px);
@@ -438,12 +445,14 @@ body::-webkit-scrollbar-thumb {
   #contact {
     background-color: #F7F7F7;
     width: 100%;
+    padding-bottom: 50px;
   }
   #contact .form-container {
     max-width: 402px;
     float: left;
   }
   #contact .form-container .block-form {
+    height: 611px;
     padding: 100px 50px 80px;
     background-color: #333333;
   }
@@ -487,26 +496,25 @@ body::-webkit-scrollbar-thumb {
     outline: none;
   }
   #contact .map-container #mapid {
-    height: 578px;
+    height: 611px;
     width: 1116px;
   }
-  #contact .call-container {
-    width: 30%;
+  #contact .call-container,
+#contact .address-container {
+    width: 20%;
     display: inline-block;
+    margin-left: 20%;
     margin-top: 80px;
   }
-  #contact .call-container img {
+  #contact .call-container img,
+#contact .address-container img {
     float: left;
     margin-right: 45px;
   }
-  #contact .address-container {
-    width: 30%;
-    display: inline-block;
-    margin-top: 80px;
-  }
-  #contact .address-container img {
-    float: left;
-    margin-right: 45px;
+  #contact .call-container h3,
+#contact .address-container h3 {
+    margin-top: 0px;
+    margin-bottom: 7px;
   }
 
   footer {
@@ -515,13 +523,25 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
   }
-  footer a img {
-    margin-left: 10px;
+  footer div {
+    text-align: center;
   }
-  footer a span {
+  footer div a img {
+    margin-left: 40px;
+  }
+  footer div a img[src="img/facebook.png"] {
+    margin-left: 0px;
+  }
+  footer div a span {
     display: inline-block;
     transform: translateY(-10px);
     margin-left: 5px;
+  }
+  footer hr {
+    width: 512px;
+    border-top: none;
+    border-left: none;
+    background-color: #F0F0F0;
   }
 
   #loading {

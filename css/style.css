@@ -171,10 +171,35 @@ a:hover {
   }
   .name-card ul {
     transform: translateX(-25px);
+    margin-bottom: 50px;
     list-style-type: none;
   }
   .name-card ul li {
     line-height: 30px;
+  }
+  .name-card .print {
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 30px;
+    background-color: #199CDB;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: all 0.3s linear;
+  }
+  .name-card .print svg {
+    float: left;
+    transform: translateX(-15px) translateY(5px);
+  }
+  .name-card .print svg .download-icon {
+    fill: #FFFFFF;
+  }
+  .name-card .print:hover {
+    background-color: #FFFFFF;
+    color: #199CDB;
+  }
+  .name-card .print:hover svg .download-icon {
+    fill: #199CDB;
   }
   .name-card img {
     position: absolute;
@@ -293,6 +318,37 @@ a:hover {
 #about .about-column .about-column-two p {
     font-size: 18px;
   }
+  #about .about-column .about-column-one .download,
+#about .about-column .about-column-two .download {
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 40px;
+    border: 2px solid #199CDB;
+    border-radius: 20px;
+    color: #199CDB;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(20px);
+    transition: all 0.3s linear;
+  }
+  #about .about-column .about-column-one .download svg,
+#about .about-column .about-column-two .download svg {
+    float: left;
+    transform: translateX(-15px) translateY(3px);
+  }
+  #about .about-column .about-column-one .download svg .download-icon,
+#about .about-column .about-column-two .download svg .download-icon {
+    fill: #199CDB;
+  }
+  #about .about-column .about-column-one .download:hover,
+#about .about-column .about-column-two .download:hover {
+    background-color: #199CDB;
+    color: #FFFFFF;
+  }
+  #about .about-column .about-column-one .download:hover svg .download-icon,
+#about .about-column .about-column-two .download:hover svg .download-icon {
+    fill: #FFFFFF;
+  }
   #about .about-column .about-column-two {
     background-color: #F1F1F1;
   }
@@ -301,7 +357,9 @@ a:hover {
     margin-right: 20px;
   }
   #about .about-column .about-column-two span {
+    display: inline-block;
     font-weight: bold;
+    margin-top: 10px;
   }
   #about .about-column .about-column-two hr {
     width: 356px;
@@ -515,6 +573,9 @@ a:hover {
 #contact .address-container h3 {
     margin-top: 0px;
     margin-bottom: 7px;
+  }
+  #contact .call-container {
+    transform: translateY(-23px);
   }
 
   footer {

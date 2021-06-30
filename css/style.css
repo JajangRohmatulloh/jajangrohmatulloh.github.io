@@ -172,36 +172,30 @@ a:hover {
   .name-card ul {
     transform: translateX(-25px);
     margin-bottom: 50px;
-    list-style-type: none;
   }
   .name-card ul li {
     line-height: 30px;
   }
-  .name-card .print {
-    cursor: pointer;
-    display: inline-block;
-    padding: 4px 30px;
-    background-color: #199CDB;
+  .name-card ul li:first-child {
+    list-style: none outside url("../img/email.png");
+  }
+  .name-card ul li:nth-child(2) {
+    list-style: none outside url("../img/phone-call.png");
+  }
+  .name-card ul:nth-child(3) {
+    list-style: none outside url("../img/home.png");
+  }
+  .name-card .sosmed {
+    position: absolute;
+    bottom: 0;
+  }
+  .name-card .sosmed img {
+    margin-right: 10px;
+  }
+  .name-card .sosmed img[src="img/instagram.png"] {
     border-radius: 20px;
-    color: #FFFFFF;
-    font-weight: bold;
-    transition: all 0.3s linear;
   }
-  .name-card .print svg {
-    float: left;
-    transform: translateX(-15px) translateY(5px);
-  }
-  .name-card .print svg .download-icon {
-    fill: #FFFFFF;
-  }
-  .name-card .print:hover {
-    background-color: #FFFFFF;
-    color: #199CDB;
-  }
-  .name-card .print:hover svg .download-icon {
-    fill: #199CDB;
-  }
-  .name-card img {
+  .name-card img[src="img/person.jpg"] {
     position: absolute;
     top: 0;
     right: 0;
@@ -504,6 +498,7 @@ a:hover {
     background-color: #F7F7F7;
     width: 100%;
     padding-bottom: 50px;
+    animation: fade-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   #contact .form-container {
     max-width: 402px;
@@ -590,7 +585,7 @@ a:hover {
   footer div a img {
     margin-left: 40px;
   }
-  footer div a img[src="img/facebook.png"] {
+  footer div a img[src="img/facebook-white.png"] {
     margin-left: 0px;
   }
   footer div a span {
@@ -599,7 +594,6 @@ a:hover {
     margin-left: 5px;
   }
   footer hr {
-    width: 512px;
     border-top: none;
     border-left: none;
     background-color: #F0F0F0;

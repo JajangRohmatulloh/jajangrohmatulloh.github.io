@@ -8,6 +8,12 @@ window.addEventListener('load', function () {
   setTimeout(function () {
     document.getElementById('tagabout').setAttribute('id', 'about');
     document.getElementById('about').removeAttribute('style');
+    document.getElementById('tagresume').setAttribute('id', 'resume');
+    document.getElementById('resume').removeAttribute('style');
+    document.getElementById('tagportfolio').setAttribute('id', 'portfolio');
+    document.getElementById('portfolio').removeAttribute('style');
+    document.getElementById('tagcontact').setAttribute('id', 'contact');
+    document.getElementById('contact').removeAttribute('style');
   }, 3180)
 })
 
@@ -21,7 +27,7 @@ document.getElementsByClassName('download')[0].addEventListener('click', functio
   print();
 });
 
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('mapid').setView([-6.444875, 106.817220], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -32,27 +38,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: 'pk.eyJ1IjoiamFqYW5ncm9obWF0dWxsb2giLCJhIjoiY2txYTRyeWR6MGRlZzMwbW82ejc3azFkNCJ9.YWC2otODQTmhOHBSHfVy_A'
 }).addTo(mymap);
 
-var marker = L.marker([51.5, -0.09]).addTo(mymap);
-
-var circle = L.circle([51.508, -0.11], {
-  color: 'red',
-  fillColor: '#f03',
-  fillOpacity: 0.5,
-  radius: 500
-}).addTo(mymap);
-
-var polygon = L.polygon([
-  [51.509, -0.08],
-  [51.503, -0.06],
-  [51.51, -0.047]
-]).addTo(mymap);
+var marker = L.marker([-6.444875, 106.817220]).addTo(mymap);
 
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
 
 var popup = L.popup()
-  .setLatLng([51.5, -0.09])
+  .setLatLng([-6.444875, 106.817220])
   .setContent("I am a standalone popup.")
   .openOn(mymap);
 
